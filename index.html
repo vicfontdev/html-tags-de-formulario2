@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <label for="nome">Nome</label>
+                <input id="nome" type="text">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email">
+            </div>
+            <div>
+                <label for="telefone">Telefone</label>
+                <input id="telefone" type="text">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados cadastrais</legend>
+            <div>
+                <label for="endereco">Endereço</label>
+                <input id="endereco" type="text" placeholder="Av/Rua">
+            </div>
+            <div>
+                <label for="bairro">Bairro</label>
+                <input id="bairro" type="text" placeholder="">
+            </div>
+            <div>
+                <label for="cidade">Cidade</label>
+                <input id="cidade" type="text" list="cidades">
+                <datalist id="cidades">
+                    <option>Fortaleza</option>
+                    <option>Fortim</option>
+                    <option>Caucaia</option>
+                    <option>Aquiraz</option>
+                    <option>Eusébio</option>
+                    <option>Maracanaú</option>
+                    <option>Maraguape</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="estado">Estado</label>
+                <select id="estado">
+                    <option disabled selected>Escolha um estado</option>
+                    <option>Acre</option>
+                    <option>Bahia</option>
+                    <option>Ceará</option>
+                    <option>Distrito Federal</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados do curso</legend>
+            <label>Cursos</label>
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        Fullstack
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        Marketing
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        UI/UX
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        Data Analystics
+                    </label>
+                </li>
+            </ul>
+
+            <div>
+                <label>Turno</label>
+                <ul>
+                    <li>
+                        <label>
+                            <input name="turno" type="radio">
+                            Manhã
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="turno" type="radio">
+                            Tarde
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="turno" type="radio">
+                            Noite
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
